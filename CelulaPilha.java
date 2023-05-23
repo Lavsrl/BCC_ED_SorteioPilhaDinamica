@@ -1,0 +1,29 @@
+package pilhasDinamicasAtividade;
+
+public class CelulaPilha {
+	private String nome;
+	private CelulaPilha anterior;
+	
+	public CelulaPilha() {}
+	
+	public CelulaPilha(String nome, CelulaPilha anterior) {
+		this.nome = nome;
+		this.anterior = anterior;
+	}
+
+	public String getDado() {
+		return nome;
+	}
+
+	public void setDado(String nome) {
+		this.nome = nome;
+	}
+
+	public CelulaPilha getAnterior() {
+		return anterior;
+	}
+
+	public void setAnterior(CelulaPilha anterior) {
+		this.anterior = anterior;
+	}
+}
